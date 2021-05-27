@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'HCaberera.wsgi.application'
 DATABASES = {
 	   'default': {
 	       'ENGINE': 'django.db.backends.oracle',
-	       'NAME': '127.0.0.1:1521/xe',
-	       'USER':'c##prueba',
+	       'NAME': '127.0.0.1:1521/xepdb1',
+	       'USER':'prueba',
 	       'PASSWORD': 'prueba',
 	       'TEST':{
 	           'USER':'default_test',

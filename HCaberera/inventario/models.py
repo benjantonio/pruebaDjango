@@ -12,7 +12,7 @@ class Maquina(models.Model):
    def __str__(self):
        return self.marcaMaquina
 
-class Repupesto(models.Model):
+class Repuesto(models.Model):
    idRepuesto = models.IntegerField(primary_key=True,verbose_name='Id de repuesto')
    nombreRepuesto = models.CharField(max_length=20, verbose_name='Nombre repuesto')
    maquina = models.ForeignKey(Maquina, on_delete=models.CASCADE)
